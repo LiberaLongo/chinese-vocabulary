@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chinese Vocabulary</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>中文 · My Dictionary</h1>
+        <p>My personal Chinese vocabulary</p>
+    </header>
+
+    <main>
+
+        <section class="toolbar">
+
+            <input
+                type="search"
+                id="search"
+                placeholder="Search Chinese, pinyin, English..."
+            >
+
+            <select id="partOfSpeech">
+                <option value="">All categories</option>
+            </select>
+
+        </section>
+
+        <section class="results-info">
+            <span id="resultCount">Loading vocabulary...</span>
+        </section>
+
+        <section id="vocabulary" class="vocabulary-grid">
+        </section>
+
+    </main>
+
+</body>
+</html>

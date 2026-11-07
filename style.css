@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f5f7;
+    color: #20252b;
+}
+
+header {
+    background: #202d3b;
+    color: white;
+    padding: 30px 6%;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+header p {
+    color: #b9c5d1;
+    margin-bottom: 0;
+}
+
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.toolbar {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+input, select {
+    padding: 13px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    background: white;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+}
+
+.results-info {
+    color: #777;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.vocabulary-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+}
+
+.card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chinese {
+    font-size: 38px;
+    margin: 0;
+}
+
+.pinyin {
+    color: #64748b;
+    font-size: 17px;
+    margin: 10px 0;
+}
+
+.english {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.category {
+    background: #e8eef5;
+    color: #344b63;
+    padding: 5px 9px;
+    border-radius: 20px;
+    font-size: 11px;
+}
+
+.details {
+    border-top: 1px solid #eee;
+    margin-top: 15px;
+    padding-top: 12px;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.details p {
+    margin: 5px 0;
+}
+
+.details strong {
+    color: #475569;
+}
+
+.note {
+    color: #8a5a25;
+}
+
+.empty {
+    text-align: center;
+    padding: 40px;
+    color: #777;
+    grid-column: 1 / -1;
+}
+
+@media (max-width: 600px) {
+    .toolbar {
+        flex-direction: column;
+    }
+}
